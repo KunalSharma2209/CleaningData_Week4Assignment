@@ -1,0 +1,23 @@
+The run_analysis.R script performs the data downloading and then carries out the steps required by the assignment as follows:
+
+Downloads the data from the provided URL, as txt files
+Loads the data, namely:
+
+	subject_train
+	x_train
+	y_train
+	subject_test
+	x_test
+	y_test
+
+The data sets are combined, to have three columns (subject, activity (y), variables(x)) and then the training and testing data sets are merged
+
+The merged data set is then condensed to only include the x-variables required, i.e. means and standard deviations
+
+The activities as numbers are replaced with their names, and the columns for each variable are suitably described
+
+The condensed data set is then melted down into one row per subject-activity, with the average value shown for each variable - this is the tidied data set
+
+The final tidied data set has 180 rows, and is written to a text file
+
+
